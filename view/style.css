@@ -22,20 +22,45 @@ position:relative;
  left:-200px;
 }
 #search-class:focus,
-#button-css:focus {
+#button-css:focus,
+#e-mail-form:focus,
+#newsletter-2:focus
+{
   outline: none;
   box-shadow: none;
 }
+#sub-id{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight:500;
+padding-left:30px;
+padding-right:30px;
+letter-spacing: 1px;
+}
 #search-class::placeholder {
-  color: #888888; /* Light gray */
-  opacity: 1;     /* Makes sure it's not transparent */
+  color: #888888;
+  opacity: 1;   
 }
 .icons-nav {
 
 
 
 }
+#login-bar-1{
+      color: #858585;
+}
 
+  .news-feed .card-img-top {
+    height: 220px;
+    object-fit:contain
+  }
+.card-img-top{
+  font-weight:bold;
+}
+
+ .news-feed .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
 .icon-img {
   width: 24px;  
   height: 24px; 
@@ -74,7 +99,7 @@ position:relative;
   content: '';
   position: absolute;
 
-  top:202px;
+  top:222px;
   left: 0;
 width:100%;
   height:80vh;
@@ -120,15 +145,20 @@ left:100px;
   background-color: #f2f2f2;
   border-bottom: 1px solid #ccc;
   padding: 0.5rem 1rem;
-  font-family: Arial, sans-serif;
-}
 
+}
+#kids-her h2{
+  font-size: 23px;
+  font-weight:600;
+}
 .brand-section a {
   text-decoration: none;
-  color: #111;
   margin: 0 1rem;
-  font-weight: bold;
+
   font-size: 14px;
+    text-decoration: none;
+  color: #444;
+  font-weight: 500;
 }
 
 .brand-section .brand {
@@ -152,7 +182,7 @@ left:100px;
 #hero-head2{
   position: relative;
 text-transform: capitalize;
-font: weight 700px;;
+font-weight: 500;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 left:300px;
 }
@@ -297,7 +327,11 @@ font-size:25px;
   font-size: 23px;
   letter-spacing:1vh;
   text-align: center;
-  transition: background 0.3s ease;
+   transition: background 0.3s ease, letter-spacing 0.3s ease;
+}
+.shop-button:hover{
+  letter-spacing:1.6vh;
+  
 }
 .login-bar{
 
@@ -344,6 +378,7 @@ font-size:25px;
       height: 130vh;
       overflow: hidden;
       position: relative;
+      
     }
 
     .bg-image {
@@ -360,30 +395,169 @@ font-size:25px;
 
     .shop-section:hover .bg-image {
       transform: scale(1.05);
+      
     }
 
     .overlay-button {
       position: absolute;
-      bottom: 270px;
+      bottom: 420px;
       margin-top:-20px;
       left: 50%;
       transform: translateX(-50%);
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.582);
       color: black;
       padding:17px;
-      padding-left:60px;
-          padding-right:60px;
+      padding-left:120px;
+          padding-right:120px;
           border-radius:10px;
-      font-weight: 500;
-      font-size:20px;
+      font-weight: 300;
+      letter-spacing: 3px;
+    font-family:'Times New Roman', Times, serif;
+      font-size:23px;
       text-decoration: none;
       z-index: 2;
     }
 
     .overlay-button:hover {
-      background-color: #f1f1f1;
+     
     }
-    
+  
+.secondary-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  
+}
+
+.secondary-nav .nav-link:hover,
+.secondary-nav .nav-link.active {
+  color: #e60023;
+  border-bottom: 2px solid #e60023;
+}
+
+
+.dropdown-menu-custom {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 1rem 2rem;
+  border-top: 1px solid #ddd;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+  z-index: 100;
+}
+
+
+.dropdown-menu-custom ul {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer input[type="email"]::placeholder {
+  color: #ccc;
+}
+
+footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #444;
+      font-size:12px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer input[type="email"]::placeholder {
+  color: #999;
+
+}
+
+.dropdown-menu-custom li a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 400;
+}
+
+.dropdown-menu-custom li a:hover {
+  color: #e60023;
+}
+
+
+.dropdown-parent:hover .dropdown-menu-custom {
+  display: block;
+}
+
+ .image-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+  }
+
+  .bg-image {
+    background-size: cover;
+    background-position: center;
+    height: 130vh;
+    transition: transform 0.5s ease;
+  }
+
+  
+  .image-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1840px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0); 
+    transition: background 0.5s ease;
+    z-index: 1;
+  }
+
+  .image-container:hover::after {
+    background: rgba(0, 0, 0, 0.4); 
+  }
+
+  .info-overlay {
+    position: absolute;
+    bottom: 300px;
+    width: 100%;
+    padding: 20px;
+    z-index: 2;
+    color: white;
+    opacity: 0;
+    cursor:pointer;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+  }
+
+  .image-container:hover .info-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .info-overlay h4 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+
+  .info-overlay p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+    color: #ddd;
+  }
+
+
+
+
+
 @media (max-width: 768px) {
   .fashion-banner {
     flex-direction: column;
