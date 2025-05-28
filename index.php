@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Home</title>
     <link rel="stylesheet" href="view/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,15 +22,296 @@
 
 <body class="bg-white text-dark">
 
- <!--head 1-->
+
+
 <header class="brand-header">
   <div class="brand-section">
+  
+    <button class="hamburger" id="hamburger-toggle">&#9776;</button>
+    
+    <a href="#"> ThreadRevolution</a>
+    <a href="#">UrbanCouture </a>
+    <a href="#">Plush Peach</a>
+    <a href="#">Denim</a>
+    <a href="#">MetroAesthetic</a>
+  </div>
+  <div class="user-section">
+
+ <form class="form-inline">
+   
+        <input class="form-control mr-sm-2" id="search-class" type="search" placeholder="Search...." aria-label="Search">
+          <button type="submit"id="button-css"><i class="fas fa-search"id="magnify"></i></button>
+
+        
+  </form>
+
+       <a href="#" class="text-dark icons-nav"><img src="view/pic/heart.png" alt="Profile" class="icon-img"id="icon-img2"></a>
+     <a href="#" class="text-dark icons-nav"><img src="view/pic/placeholder.png" alt="Profile" class="icon-img"id="icon-img2"></a>
+
+
+
+       <a href="#" class="text-dark icons-nav"><img src="view/pic/shopping-bag.png" alt="Profile" class="icon-img"id="icon-img2"></a>
+        <a href="#" class="text-dark icons-nav"></a>
+<div class="dropdown" style="position: relative; ">
+<img src="view/pic/user.png" alt="Profile" class="icon-img"id="icon-img2"id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">  
+    </i>
+
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 120px;">
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></li>
+  </ul>
+</div>
+</div>
+</header>
+<header class="collapse d-md-block" id="fullNavbar">
+  <div class="d-flex justify-content-between align-items-center p-4 border-bottom">
+    <h1 class="h4 fw-light fst-italic" id="font-gap">SnowBee</h1>
+
+    <button class="btn btn-sm btn-outline-primary d-none d-md-block">
+      <a href="login.php" class="text-decoration-none text-primary">Login or Sign In</a>
+    </button>
+  </div>
+
+ 
+  <div class="secondary-nav bg-white border-bottom">
+    <div class="container">
+    <ul class="nav justify-content-center py-2 position-relative">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">New Arrivals</a>
+      </li>
+
+      
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="view/women-section.php">Woman</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Dresses</h6><ul><li><a href="#">Casual</a></li><li><a href="#">Evening</a></li></ul></div>
+            <div class="col-md-3"><h6>Tops</h6><ul><li><a href="#">Blouses</a></li><li><a href="#">T-Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottoms</h6><ul><li><a href="#">Skirts</a></li><li><a href="#">Jeans</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Bags</a></li><li><a href="#">Jewelry</a></li></ul></div>
+          </div>
+        </div>
+      </li>
+
+     
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="view/men-collection.php">Man</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Topwear</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">T-Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottomwear</h6><ul><li><a href="#">Pants</a></li><li><a href="#">Jeans</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Watches</a></li><li><a href="#">Wallets</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Shoes</a></li><li><a href="#">Sandals</a></li></ul></div>
+          </div>
+        </div>
+      </li>
+
+   
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="view/teen-section.php">Teen</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Topwear</h6><ul><li><a href="#">Graphic Tees</a></li><li><a href="#">Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottomwear</h6><ul><li><a href="#">Joggers</a></li><li><a href="#">Shorts</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Sneakers</a></li><li><a href="#">Flip-Flops</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Caps</a></li><li><a href="#">Backpacks</a></li></ul></div>
+          </div>
+        </div>
+      </li>
+
+    
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="view/child-section.php">Child</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Girls</h6><ul><li><a href="#">Dresses</a></li><li><a href="#">Tops</a></li></ul></div>
+            <div class="col-md-3"><h6>Boys</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">Pants</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Shoes</a></li><li><a href="#">Sandals</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Caps</a></li><li><a href="#">Bags</a></li></ul></div>
+          </div>
+        </div>
+      </li>
+
+   
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="view/babies-section.php">Baby</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Clothing</h6><ul><li><a href="#">Rompers</a></li><li><a href="#">Sets</a></li></ul></div>
+            <div class="col-md-3"><h6>Winter Wear</h6><ul><li><a href="#">Sweaters</a></li><li><a href="#">Hoodies</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Booties</a></li><li><a href="#">Socks</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Blankets</a></li><li><a href="#">Caps</a></li></ul></div>
+          </div>
+        </div>
+      </li>
+
+      
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="#">Home</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Decor</h6><ul><li><a href="#">Vases</a></li><li><a href="#">Lights</a></li></ul></div>
+            <div class="col-md-3"><h6>Furnishings</h6><ul><li><a href="#">Cushions</a></li><li><a href="#">Curtains</a></li></ul></div>
+            <div class="col-md-3"><h6>Dining</h6><ul><li><a href="#">Plates</a></li><li><a href="#">Glassware</a></li></ul></div>
+            <div class="col-md-3"><h6>Kitchen</h6><ul><li><a href="#">Storage</a></li><li><a href="#">Tools</a></li></ul></div>
+          </div>
+        </div>
+      </li>
+
+     
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="#">Gifts</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>For Him</h6><ul><li><a href="#">Watches</a></li><li><a href="#">Wallets</a></li></ul></div>
+            <div class="col-md-3"><h6>For Her</h6><ul><li><a href="#">Perfumes</a></li><li><a href="#">Bags</a></li></ul></div>
+            <div class="col-md-3"><h6>Occasions</h6><ul><li><a href="#">Birthday</a></li><li><a href="#">Anniversary</a></li></ul></div>
+            <div class="col-md-3"><h6>Cards</h6><ul><li><a href="#">Greeting Cards</a></li><li><a href="#">Handmade</a></li></ul></div>
+          </div>
+        </div>
+      </li>
+
+     
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link text-danger" href="#">Sale</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Men</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">Pants</a></li></ul></div>
+            <div class="col-md-3"><h6>Women</h6><ul><li><a href="#">Dresses</a></li><li><a href="#">Tops</a></li></ul></div>
+            <div class="col-md-3"><h6>Kids</h6><ul><li><a href="#">Baby Wear</a></li><li><a href="#">Footwear</a></li></ul></div>
+            <div class="col-md-3"><h6>Home</h6><ul><li><a href="#">Decor</a></li><li><a href="#">Dining</a></li></ul></div>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+  </div>
+</header>
+  
+  
+  <nav class="navbar bg-dark py-2">
+  <div class="container justify-content-center">
+    <span class="navbar-text text-white fw-bold fs-5">
+      40% OFF ON NEW ARRIVALS &amp; KIDS COLLECTION
+    </span>
+  </div>
+</nav>
+
+
+<nav id="side-nav" class="side-nav">
+  <button id="close-btn">&times;</button>
+  <ul>
+    <li><a href="#">ThreadRevolution</a></li>
+    <li><a href="#">UrbanCouture</a></li>
+    <li><a href="#">Plush Peach</a></li>
+    <li><a href="#">Denim</a></li>
+    <li><a href="#">MetroAesthetic</a></li>
+    <li><a href="#">New Arrivals</a></li>
+    <li><a href="view/women-section.php">Woman</a></li>
+    <li><a href="view/men-collection.php">Man</a></li>
+    <li><a href="view/teen-section.php">Teen</a></li>
+    <li><a href="view/child-section.php">Child</a></li>
+    <li><a href="view/babies-section.php">Baby</a></li>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Gifts</a></li>
+  </ul>
+</nav>
+
+<style>
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.side-nav ul li {
+  margin: 15px 0;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
+}
+
+
+#close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  .hamburger {
+    display: inline-block;
+  }
+ 
+  .brand-header .brand-section a:not(.hamburger) {
+    display: none;
+  }
+
+  #fullNavbar {
+    display: none !important;
+  }
+}
+</style>
+
+<script>
+
+document.getElementById('hamburger-toggle').addEventListener('click', function() {
+  document.getElementById('side-nav').style.width = '250px';
+});
+document.getElementById('close-btn').addEventListener('click', function() {
+  document.getElementById('side-nav').style.width = '0';
+});
+</script>
+
+
+
+
+
+
+
+
+ 
+<!------------------------------------------------------------------------Previous Nav Code I Will Need Later ------------------------------------------------------------------------------------
+ 
+<header class="brand-header">
+  <div class="brand-section">
+   
     <a href="#" ></a>
-    <!-- <a href="#">Tops</a>
-    <a href="#">Trouser</a>
-    <a href="#">Watches</a>
-    <a href="#">Belt</a>
-    <a href="#">Shoes</a> -->
+   
 
     <a href="#"> ThreadRevolution</a>
     <a href="#">UrbanCouture </a>
@@ -48,80 +331,151 @@
 
        <a href="#" class="text-dark icons-nav"><img src="view/pic/heart.png" alt="Profile" class="icon-img"id="icon-img2"></a>
      <a href="#" class="text-dark icons-nav"><img src="view/pic/placeholder.png" alt="Profile" class="icon-img"id="icon-img2"></a>
-       <a href="#" class="text-dark icons-nav"><img src="view/pic/shopping-bag.png" alt="Profile" class="icon-img"id="icon-img2"></a>
-        <a href="#" class="text-dark icons-nav"><img src="view/pic/user.png" alt="Profile" class="icon-img"id="icon-img2"></a>
 
+
+
+       <a href="#" class="text-dark icons-nav"><img src="view/pic/shopping-bag.png" alt="Profile" class="icon-img"id="icon-img2"></a>
+        <a href="#" class="text-dark icons-nav"></a>
+<div class="dropdown" style="position: relative; ">
+<img src="view/pic/user.png" alt="Profile" class="icon-img"id="icon-img2"id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">  
+    </i>
+
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 120px;">
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></li>
+  </ul>
+</div>
 </div>
 </header>
 
-  <!--head 1-->
-   <!--head 2-->
-    <header class="d-flex justify-content-between align-items-center p-4 border-bottom">
-    <h1 class="h4 fw-light fst-italic"id="font-gap">SnowBee</h1>
-    
-        
-<!-- Secondary Navigation -->
-<div class="secondary-nav bg-white border-bottom">
-  <div class="container">
+ 
+<header class="collapse d-md-block" id="fullNavbar">
+  <div class="d-flex justify-content-between align-items-center p-4 border-bottom">
+    <h1 class="h4 fw-light fst-italic" id="font-gap">SnowBee</h1>
+
+    <button class="btn btn-sm btn-outline-primary d-none d-md-block">
+      <a href="login.php" class="text-decoration-none text-primary">Login or Sign In</a>
+    </button>
+  </div>
+
+ 
+  <div class="secondary-nav bg-white border-bottom">
+    <div class="container">
     <ul class="nav justify-content-center py-2 position-relative">
       <li class="nav-item">
         <a class="nav-link active" href="#">New Arrivals</a>
       </li>
+
       
       <li class="nav-item dropdown-parent">
-        <a class="nav-link" href="#">Woman</a>
+        <a class="nav-link" href="view/women-section.php">Woman</a>
         <div class="dropdown-menu-custom">
-          <ul>
-            <li><a href="#">Dresses</a></li>
-            <li><a href="#">Tops</a></li>
-            <li><a href="#">Bottoms</a></li>
-            <li><a href="#">Shoes</a></li>
-          </ul>
+          <div class="row">
+            <div class="col-md-3"><h6>Dresses</h6><ul><li><a href="#">Casual</a></li><li><a href="#">Evening</a></li></ul></div>
+            <div class="col-md-3"><h6>Tops</h6><ul><li><a href="#">Blouses</a></li><li><a href="#">T-Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottoms</h6><ul><li><a href="#">Skirts</a></li><li><a href="#">Jeans</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Bags</a></li><li><a href="#">Jewelry</a></li></ul></div>
+          </div>
         </div>
       </li>
 
+     
       <li class="nav-item dropdown-parent">
-        <a class="nav-link" href="#">Man</a>
+        <a class="nav-link" href="view/men-collection.php">Man</a>
         <div class="dropdown-menu-custom">
-          <ul>
-            <li><a href="#">Shirts</a></li>
-            <li><a href="#">Pants</a></li>
-            <li><a href="#">Jackets</a></li>
-            <li><a href="#">Shoes</a></li>
-          </ul>
+          <div class="row">
+            <div class="col-md-3"><h6>Topwear</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">T-Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottomwear</h6><ul><li><a href="#">Pants</a></li><li><a href="#">Jeans</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Watches</a></li><li><a href="#">Wallets</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Shoes</a></li><li><a href="#">Sandals</a></li></ul></div>
+          </div>
         </div>
       </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Teen</a>
+   
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="view/teen-section.php">Teen</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Topwear</h6><ul><li><a href="#">Graphic Tees</a></li><li><a href="#">Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottomwear</h6><ul><li><a href="#">Joggers</a></li><li><a href="#">Shorts</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Sneakers</a></li><li><a href="#">Flip-Flops</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Caps</a></li><li><a href="#">Backpacks</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Child</a>
+
+    
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="view/child-section.php">Child</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Girls</h6><ul><li><a href="#">Dresses</a></li><li><a href="#">Tops</a></li></ul></div>
+            <div class="col-md-3"><h6>Boys</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">Pants</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Shoes</a></li><li><a href="#">Sandals</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Caps</a></li><li><a href="#">Bags</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Baby</a>
+
+   
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="view/babies-section.php">Baby</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Clothing</h6><ul><li><a href="#">Rompers</a></li><li><a href="#">Sets</a></li></ul></div>
+            <div class="col-md-3"><h6>Winter Wear</h6><ul><li><a href="#">Sweaters</a></li><li><a href="#">Hoodies</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Booties</a></li><li><a href="#">Socks</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Blankets</a></li><li><a href="#">Caps</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
+
+      
+      <li class="nav-item dropdown-parent">
         <a class="nav-link" href="#">Home</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Decor</h6><ul><li><a href="#">Vases</a></li><li><a href="#">Lights</a></li></ul></div>
+            <div class="col-md-3"><h6>Furnishings</h6><ul><li><a href="#">Cushions</a></li><li><a href="#">Curtains</a></li></ul></div>
+            <div class="col-md-3"><h6>Dining</h6><ul><li><a href="#">Plates</a></li><li><a href="#">Glassware</a></li></ul></div>
+            <div class="col-md-3"><h6>Kitchen</h6><ul><li><a href="#">Storage</a></li><li><a href="#">Tools</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
+
+     
+      <li class="nav-item dropdown-parent">
         <a class="nav-link" href="#">Gifts</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>For Him</h6><ul><li><a href="#">Watches</a></li><li><a href="#">Wallets</a></li></ul></div>
+            <div class="col-md-3"><h6>For Her</h6><ul><li><a href="#">Perfumes</a></li><li><a href="#">Bags</a></li></ul></div>
+            <div class="col-md-3"><h6>Occasions</h6><ul><li><a href="#">Birthday</a></li><li><a href="#">Anniversary</a></li></ul></div>
+            <div class="col-md-3"><h6>Cards</h6><ul><li><a href="#">Greeting Cards</a></li><li><a href="#">Handmade</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
+
+     
+      <li class="nav-item dropdown-parent">
         <a class="nav-link text-danger" href="#">Sale</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Men</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">Pants</a></li></ul></div>
+            <div class="col-md-3"><h6>Women</h6><ul><li><a href="#">Dresses</a></li><li><a href="#">Tops</a></li></ul></div>
+            <div class="col-md-3"><h6>Kids</h6><ul><li><a href="#">Baby Wear</a></li><li><a href="#">Footwear</a></li></ul></div>
+            <div class="col-md-3"><h6>Home</h6><ul><li><a href="#">Decor</a></li><li><a href="#">Dining</a></li></ul></div>
+          </div>
+        </div>
       </li>
+
     </ul>
   </div>
-</div>
-
-    </nav>
-    <div class="login-bar">
- <a href="#" class="text-decoration-none text" id="login-bar-1">Sign In or Create an account</a>
-    </div>
-
- <!--head 2-->
-     
-  </header>
+  </div>
+</header>
+  
+  
   <nav class="navbar bg-dark py-2">
   <div class="container justify-content-center">
     <span class="navbar-text text-white fw-bold fs-5">
@@ -129,6 +483,9 @@
     </span>
   </div>
 </nav>
+
+--------------------------------------------------------------------------Previous Navbar Code I will need for later------------------------------------------------------------------------------------------->
+
 
       
   </header>
@@ -155,7 +512,7 @@
       <div class="carousel-item active">
         <div class="row">
           <div class="col-6 col-md-3">
-            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2" class="img-fluid rounded mb-2" alt="Product 1">
+            <img src="view/pic/f1.jpg" class="img-fluid rounded mb-2" alt="Product 1">
             <p>Floral Midi Dress</p>
             <p class="text-muted small">$89.99</p>
           </div>
@@ -275,7 +632,7 @@
 <div class="container-fluid">
   <div class="row">
  
-    <div class="col-md-6 shop-section position-relative p-0">
+    <div class="col-md-6 shop-section position-relative p-0"id="index-banner-bg4">
       <div class="image-container">
         <div class="bg-image" style="background-image: url('view/pic/a45.jpg');"></div>
              <!-- <div class="bg-image" style="background-image: url('view/pic/f1000.jpg');"></div> -->
@@ -287,7 +644,7 @@
     </div>
 
     
-    <div class="col-md-6 shop-section position-relative p-0">
+    <div class="col-md-6 shop-section position-relative p-0"id="index-banner-bg4">
       <div class="image-container">
         <div class="bg-image" style="background-image: url('view/pic/a2.jpg');"></div>
         <div class="info-overlay">
@@ -390,7 +747,7 @@
 <div class="container-fluid">
   <div class="row">
  
-    <div class="col-md-6 shop-section position-relative p-0">
+    <div class="col-md-6 shop-section position-relative p-0"id="index-banner-bg">
       <div class="image-container">
         <div class="bg-image" style="background-image: url('view/pic/f212.jpg');"></div>
              <!-- <div class="bg-image" style="background-image: url('view/pic/f1000.jpg');"></div> -->
@@ -402,7 +759,7 @@
     </div>
 
     
-    <div class="col-md-6 shop-section position-relative p-0">
+    <div class="col-md-6 shop-section position-relative p-0"id="index-banner-bg1">
       <div class="image-container">
         <div class="bg-image" style="background-image: url('view/pic/f7.jpg');"></div>
         <div class="info-overlay">
@@ -506,10 +863,67 @@
     </div>
   </div>
 </footer>
+<!---------------------------------------------------------- Login-Modal ---------------------------------------------------------------------------------->
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"> <!-- Centering here -->
+    <div class="modal-content">
+      <form action="login.php" method="POST">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="name" class="form-control mb-2" placeholder="Name" required>
+         
+          <input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!---------------------------------------------------------- Modal ---------------------------------------------------------------------------------->
+
+
+<!---------------------------------------------------------- Sign Up-Modal ---------------------------------------------------------------------------------->
+
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"> <!-- Centering here -->
+    <div class="modal-content">
+      <form action="login.php" method="POST">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <input type="text" name="name" class="form-control mb-2" placeholder="Name" required>
+          <input type="email" name="email" class="form-control mb-2" placeholder="Email" required>
+          <input type="password" name="password" class="form-control mb-2" placeholder="Password" required>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!---------------------------------------------------------- Modal ---------------------------------------------------------------------------------->
+
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+
+
+
+  </script>
+  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 </body>

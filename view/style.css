@@ -66,9 +66,15 @@ letter-spacing: 1px;
   height: 24px; 
   object-fit: contain; 
   vertical-align: middle; 
-  cursor: pointer; 
-  
+  cursor: pointer;
+ border-radius: 0%;
+border: 2px solid transparent;
 }
+
+
+
+
+
 #icon-img2{
     width: 22px;  
   height: 22px; 
@@ -95,24 +101,12 @@ letter-spacing: 1px;
 #navbar-1{
      font-weight: 600;
 }
-.hero-bg::before {
-  content: '';
-  position: absolute;
 
-  top:222px;
-  left: 0;
-width:100%;
-  height:80vh;
-  background-color: rgba(0, 0, 0, 0.288); 
-  z-index: 1;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.hero-bg > * {
-  position: relative;
-  z-index: 2;
-}
 .hero-bg {
       background-image: url('pic/f4-wide.jpg');
+        background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.171));
+         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('pic/f4-wide.jpg') center/cover no-repeat;
       background-color: aliceblue;
       background-size: cover;
       text-transform: capitalize;
@@ -223,6 +217,57 @@ left:50px;
   cursor: pointer;
 }
 
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    .navbar h1 {
+      font-size: 24px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background-color: #555;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
 #hero-head2{
   position: relative;
 text-transform: capitalize;
@@ -652,20 +697,22 @@ height:500px;
   border-bottom: 2px solid #e60023;
 }
 
-
 .dropdown-menu-custom {
   display: none;
   position: absolute;
-  top: 100%;
+ 
   left: 0;
   width: 100%;
   background: white;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   border-top: 1px solid #ddd;
   box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-  z-index: 100;
+  z-index: 1000;
 }
 
+.dropdown-parent:hover .dropdown-menu-custom {
+  display: block;
+}
 
 .dropdown-menu-custom ul {
   display: block;
@@ -673,6 +720,21 @@ height:500px;
   margin: 0;
   padding: 0;
 }
+
+.secondary-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.secondary-nav .nav-link:hover,
+.secondary-nav .nav-link.active {
+  color: #e60023;
+  border-bottom: 2px solid #e60023;
+}
+
 footer a:hover {
   text-decoration: underline;
 }
@@ -694,7 +756,61 @@ footer input[type="email"]::placeholder {
   color: #999;
 
 }
+  .masonry {
+      column-count: 3;
+      column-gap: 1rem;
+    }
 
+    @media (max-width: 768px) {
+      .masonry {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .masonry {
+        column-count: 1;
+      }
+    }
+
+    .masonry-item {
+      break-inside: avoid;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .masonry-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .filter-buttons {
+      overflow-x: auto;
+      white-space: nowrap;
+      padding-bottom: 1rem;
+    }
+
+    .filter-buttons .btn {
+      margin-right: 0.5rem;
+    }
+    #watch-btn-id{
+     border:1.4px solid rgb(224, 219, 219);
+     font-size:15px;
+     font-weight:600;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+   
+.btn-login{
+  background-color: #00000041;
+  color:white;
+}
+    #watch-btn-id:hover{
+      background-color:#1f1f1f;
+    }
 .dropdown-menu-custom li a {
   text-decoration: none;
   color: #444;
@@ -770,24 +886,294 @@ footer input[type="email"]::placeholder {
     color: #ddd;
   }
 
+.secondary-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-link {
+  display: flex;
+  gap: 20px;
+}
 
 
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-link {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-link.show {
+    display: flex;
+  }
+}
+
+/* --------------------------------------------------rESPONSIve */
+
+
+    /* Responsive*/
 
 @media (max-width: 768px) {
   .fashion-banner {
     flex-direction: column;
   }
+.hero-bg{
 
+}
+
+
+.container{
+  
+}
+.hero-bg {
+     
+ 
+    }
+    #hero-head{
+position: relative;
+top:170px;
+
+left:20px;
+}
+.product-card {
+  border: 1px solid #f0f0f0;
+  padding-bottom: 10px;
+
+  transition: box-shadow 0.3s;
+  background-color: white;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+        overflow: hidden;
+}
+.product-img img {
+    height:300px; 
+    width: 100%;
+    object-fit: cover;
+}
+    #hero-btn{
+   padding:12px;
+   margin-top:22px;
+   padding-left:60px;
+   padding-right:60px;
+   text-transform:capitalize;
+   
+font-size:15px;
+   
+
+  font-family:Arial, Helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing:3px;
+
+}
+#banner-bg-female{
+ background-image: url('pic/red.jpg');
+  margin-top:10px;
+      background-color: aliceblue;
+      background-size: cover;
+      background-position: center;
+      height: 70vh;
+      width:100%;
+}
   .banner-content {
-    padding: 40px 20px;
+ 
+    position: relative;
+  margin-left:-05px;
+    margin-right: auto;
+    font-size:30px;
+    
+    
     text-align: center;
   }
 
-  .banner-content p {
-    margin-left: auto;
-    margin-right: auto;
-  }
+  
+.banner-image img {
+
+  object-fit: cover;
+  display: block;
 }
+
+.banner-content h2 
+ {
+ 
+  }
+  .banner-content p {
+    
+    font-size:13px;
+   
+  }
+  .shop-button{
+    font-size:20px;
+    width:350px;
+  }
+  #hero-head32{
+position: relative;
+
+top:70px;
+left:50px;
+}
+
+#hero-head2{
+  position: relative;
+top:70px;
+left:50px;
+}
+.banner-bg{
+  background-image: url('pic/kids.jpg');
+background-size:fill;
+background-repeat: no-repeat;
+  margin-top:10px;
+
+      height: 70vh;
+ 
+
+}
+ .long-fashion-card {
+    flex-direction: column;
+    width: 60%;
+    height:90%;
+    margin-left:110px;
+    padding-bottom:20px;
+   
+  }
+
+  .long-fashion-card img {
+    flex: none;
+    width: 100%;
+    height: 78%;
+    object-fit: contain;
+  }
+  
+
+
+ 
+  .card-details {
+    flex: 1 1 auto;
+    padding: 4px 4px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 12px;
+    color: #222;
+    margin-bottom: 8px;
+  }
+  .card-price {
+    font-weight: 500;
+    font-size: 12px;
+    color: #888;
+  }
+
+
+
+
+
+
+
+
+
+
+#index-banner-bg{
+width: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+    height:470px;
+}
+
+
+
+#index-banner-bg1{
+
+width: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+    height:470px;
+}
+
+#index-banner-bg3{
+width: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+  height:470px;
+}
+
+
+#index-banner-bg4{
+
+width: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+    height:470px;
+}
+
+
+#index-banner-bg6{
+
+width: 50%;
+  overflow: hidden;
+  object-fit: contain;
+  display: block;
+    height:570px;
+}
+
+
+
+
+
+
+
+
+
+
+.banner-bg{
+  background-image: url('pic/kids.jpg');
+  margin-top:10px;
+      background-color: aliceblue;
+    
+      background-position: center;
+
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+    height:360px;
+
+}
+
+
+}
+
 
 

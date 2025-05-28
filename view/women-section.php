@@ -21,22 +21,20 @@
 <body class="bg-white text-dark">
 
  <!--head 1-->
+
+
 <header class="brand-header">
   <div class="brand-section">
-    <a href="#" ></a>
-    <!-- <a href="#">Tops</a>
-    <a href="#">Trouser</a>
-    <a href="#">Watches</a>
-    <a href="#">Belt</a>
-    <a href="#">Shoes</a> -->
-
+  
+    <button class="hamburger" id="hamburger-toggle">&#9776;</button>
+    
     <a href="#"> ThreadRevolution</a>
     <a href="#">UrbanCouture </a>
     <a href="#">Plush Peach</a>
     <a href="#">Denim</a>
     <a href="#">MetroAesthetic</a>
   </div>
-<div class="user-section">
+  <div class="user-section">
 
  <form class="form-inline">
    
@@ -46,82 +44,151 @@
         
   </form>
 
-       <a href="#" class="text-dark icons-nav"><img src="pic/heart.png" alt="Profile" class="icon-img"id="icon-img2"></a>
+     <a href="#" class="text-dark icons-nav"><img src="pic/heart.png" alt="Profile" class="icon-img"id="icon-img2"></a>
      <a href="#" class="text-dark icons-nav"><img src="pic/placeholder.png" alt="Profile" class="icon-img"id="icon-img2"></a>
-       <a href="#" class="text-dark icons-nav"><img src="pic/shopping-bag.png" alt="Profile" class="icon-img"id="icon-img2"></a>
-        <a href="#" class="text-dark icons-nav"><img src="pic/user.png" alt="Profile" class="icon-img"id="icon-img2"></a>
 
+
+
+       <a href="#" class="text-dark icons-nav"><img src="pic/shopping-bag.png" alt="Profile" class="icon-img"id="icon-img2"></a>
+        <a href="#" class="text-dark icons-nav"></a>
+<div class="dropdown" style="position: relative; ">
+<img src="pic/user.png" alt="Profile" class="icon-img"id="icon-img2"id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">  
+    </i>
+
+  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="min-width: 120px;">
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></li>
+    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a></li>
+  </ul>
+</div>
 </div>
 </header>
+<header class="collapse d-md-block" id="fullNavbar">
+  <div class="d-flex justify-content-between align-items-center p-4 border-bottom">
+    <h1 class="h4 fw-light fst-italic" id="font-gap">SnowBee</h1>
 
-  <!--head 1-->
-   <!--head 2-->
-    <header class="d-flex justify-content-between align-items-center p-4 border-bottom">
-    <h1 class="h4 fw-light fst-italic"id="font-gap">SnowBee</h1>
-    
-        
-<!-- Secondary Navigation -->
-<div class="secondary-nav bg-white border-bottom">
-  <div class="container">
+    <button class="btn btn-sm btn-outline-primary d-none d-md-block">
+      <a href="login.php" class="text-decoration-none text-primary">Login or Sign In</a>
+    </button>
+  </div>
+
+ 
+  <div class="secondary-nav bg-white border-bottom">
+    <div class="container">
     <ul class="nav justify-content-center py-2 position-relative">
       <li class="nav-item">
         <a class="nav-link active" href="#">New Arrivals</a>
       </li>
+
       
       <li class="nav-item dropdown-parent">
-        <a class="nav-link" href="#">Woman</a>
+        <a class="nav-link" href="women-section.php">Woman</a>
         <div class="dropdown-menu-custom">
-          <ul>
-            <li><a href="#">Dresses</a></li>
-            <li><a href="#">Tops</a></li>
-            <li><a href="#">Bottoms</a></li>
-            <li><a href="#">Shoes</a></li>
-          </ul>
+          <div class="row">
+            <div class="col-md-3"><h6>Dresses</h6><ul><li><a href="#">Casual</a></li><li><a href="#">Evening</a></li></ul></div>
+            <div class="col-md-3"><h6>Tops</h6><ul><li><a href="#">Blouses</a></li><li><a href="#">T-Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottoms</h6><ul><li><a href="#">Skirts</a></li><li><a href="#">Jeans</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Bags</a></li><li><a href="#">Jewelry</a></li></ul></div>
+          </div>
         </div>
       </li>
 
+     
       <li class="nav-item dropdown-parent">
         <a class="nav-link" href="men-collection.php">Man</a>
         <div class="dropdown-menu-custom">
-          <ul>
-            <li><a href="#">Shirts</a></li>
-            <li><a href="#">Pants</a></li>
-            <li><a href="#">Jackets</a></li>
-            <li><a href="#">Shoes</a></li>
-          </ul>
+          <div class="row">
+            <div class="col-md-3"><h6>Topwear</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">T-Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottomwear</h6><ul><li><a href="#">Pants</a></li><li><a href="#">Jeans</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Watches</a></li><li><a href="#">Wallets</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Shoes</a></li><li><a href="#">Sandals</a></li></ul></div>
+          </div>
         </div>
       </li>
 
-      <li class="nav-item">
+   
+      <li class="nav-item dropdown-parent">
         <a class="nav-link" href="teen-section.php">Teen</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Topwear</h6><ul><li><a href="#">Graphic Tees</a></li><li><a href="#">Shirts</a></li></ul></div>
+            <div class="col-md-3"><h6>Bottomwear</h6><ul><li><a href="#">Joggers</a></li><li><a href="#">Shorts</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Sneakers</a></li><li><a href="#">Flip-Flops</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Caps</a></li><li><a href="#">Backpacks</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
+
+    
+      <li class="nav-item dropdown-parent">
         <a class="nav-link" href="child-section.php">Child</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Girls</h6><ul><li><a href="#">Dresses</a></li><li><a href="#">Tops</a></li></ul></div>
+            <div class="col-md-3"><h6>Boys</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">Pants</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Shoes</a></li><li><a href="#">Sandals</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Caps</a></li><li><a href="#">Bags</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
+
+   
+      <li class="nav-item dropdown-parent">
         <a class="nav-link" href="babies-section.php">Baby</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Clothing</h6><ul><li><a href="#">Rompers</a></li><li><a href="#">Sets</a></li></ul></div>
+            <div class="col-md-3"><h6>Winter Wear</h6><ul><li><a href="#">Sweaters</a></li><li><a href="#">Hoodies</a></li></ul></div>
+            <div class="col-md-3"><h6>Footwear</h6><ul><li><a href="#">Booties</a></li><li><a href="#">Socks</a></li></ul></div>
+            <div class="col-md-3"><h6>Accessories</h6><ul><li><a href="#">Blankets</a></li><li><a href="#">Caps</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+
+      
+      <li class="nav-item dropdown-parent">
+        <a class="nav-link" href="../index.php">Home</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Decor</h6><ul><li><a href="#">Vases</a></li><li><a href="#">Lights</a></li></ul></div>
+            <div class="col-md-3"><h6>Furnishings</h6><ul><li><a href="#">Cushions</a></li><li><a href="#">Curtains</a></li></ul></div>
+            <div class="col-md-3"><h6>Dining</h6><ul><li><a href="#">Plates</a></li><li><a href="#">Glassware</a></li></ul></div>
+            <div class="col-md-3"><h6>Kitchen</h6><ul><li><a href="#">Storage</a></li><li><a href="#">Tools</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
+
+     
+      <li class="nav-item dropdown-parent">
         <a class="nav-link" href="#">Gifts</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>For Him</h6><ul><li><a href="#">Watches</a></li><li><a href="#">Wallets</a></li></ul></div>
+            <div class="col-md-3"><h6>For Her</h6><ul><li><a href="#">Perfumes</a></li><li><a href="#">Bags</a></li></ul></div>
+            <div class="col-md-3"><h6>Occasions</h6><ul><li><a href="#">Birthday</a></li><li><a href="#">Anniversary</a></li></ul></div>
+            <div class="col-md-3"><h6>Cards</h6><ul><li><a href="#">Greeting Cards</a></li><li><a href="#">Handmade</a></li></ul></div>
+          </div>
+        </div>
       </li>
-      <li class="nav-item">
+
+     
+      <li class="nav-item dropdown-parent">
         <a class="nav-link text-danger" href="#">Sale</a>
+        <div class="dropdown-menu-custom">
+          <div class="row">
+            <div class="col-md-3"><h6>Men</h6><ul><li><a href="#">Shirts</a></li><li><a href="#">Pants</a></li></ul></div>
+            <div class="col-md-3"><h6>Women</h6><ul><li><a href="#">Dresses</a></li><li><a href="#">Tops</a></li></ul></div>
+            <div class="col-md-3"><h6>Kids</h6><ul><li><a href="#">Baby Wear</a></li><li><a href="#">Footwear</a></li></ul></div>
+            <div class="col-md-3"><h6>Home</h6><ul><li><a href="#">Decor</a></li><li><a href="#">Dining</a></li></ul></div>
+          </div>
+        </div>
       </li>
+
     </ul>
   </div>
-</div>
-
-    </nav>
-    <div class="login-bar">
- <a href="#" class="text-decoration-none text" id="login-bar-1">Sign In or Create an account</a>
-    </div>
-
- <!--head 2-->
-     
-  </header>
+  </div>
+</header>
+  
+  
   <nav class="navbar bg-dark py-2">
   <div class="container justify-content-center">
     <span class="navbar-text text-white fw-bold fs-5">
@@ -130,8 +197,104 @@
   </div>
 </nav>
 
-      
-  </header>
+
+<nav id="side-nav" class="side-nav">
+  <button id="close-btn">&times;</button>
+  <ul>
+    <li><a href="#">ThreadRevolution</a></li>
+    <li><a href="#">UrbanCouture</a></li>
+    <li><a href="#">Plush Peach</a></li>
+    <li><a href="#">Denim</a></li>
+    <li><a href="#">MetroAesthetic</a></li>
+    <li><a href="#">New Arrivals</a></li>
+    <li><a href="women-section.php">Woman</a></li>
+    <li><a href="men-collection.php">Man</a></li>
+    <li><a href="teen-section.php">Teen</a></li>
+    <li><a href="child-section.php">Child</a></li>
+    <li><a href="babies-section.php">Baby</a></li>
+    <li><a href="../index.php">Home</a></li>
+    <li><a href="#">Gifts</a></li>
+  </ul>
+</nav>
+
+<style>
+
+.hamburger {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+
+.side-nav ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.side-nav ul li {
+  margin: 15px 0;
+}
+
+.side-nav ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
+}
+
+
+#close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+  
+  .hamburger {
+    display: inline-block;
+  }
+ 
+  .brand-header .brand-section a:not(.hamburger) {
+    display: none;
+  }
+
+  #fullNavbar {
+    display: none !important;
+  }
+}
+</style>
+
+<script>
+
+document.getElementById('hamburger-toggle').addEventListener('click', function() {
+  document.getElementById('side-nav').style.width = '250px';
+});
+document.getElementById('close-btn').addEventListener('click', function() {
+  document.getElementById('side-nav').style.width = '0';
+});
+</script>
   <!-- Hero Section -->
  <section class="custom-container my-5"id="container-id">
   <h2 class="mb-4 text-center">Women's Collection</h2>
@@ -384,11 +547,11 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Box Section -->
+
 <div class="container-fluid">
   <div class="row">
  
-    <div class="col-md-6 shop-section position-relative p-0">
+    <div class="col-md-6 shop-section position-relative p-0"id="index-banner-bg3">
       <div class="image-container">
         <div class="bg-image" style="background-image: url('pic/f1000.jpg');"></div>
              <!-- <div class="bg-image" style="background-image: url('view/pic/f1000.jpg');"></div> -->
@@ -397,7 +560,7 @@
     </div>
 
     
-    <div class="col-md-6 shop-section position-relative p-0">
+    <div class="col-md-6 shop-section position-relative p-0"id="index-banner-bg3">
       <div class="image-container">
         <div class="bg-image" style="background-image: url('pic/f7.jpg');"></div>
         
