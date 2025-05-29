@@ -280,6 +280,7 @@
 <body>
 
 <div class="container py-5">
+   <h1 class="fw-bold mb-4">Gifts and Accessories</h1>
   <h2 class="fw-bold mb-4">Watch</h2>
 
   <!-- Filter Buttons -->
